@@ -1,9 +1,9 @@
 package application;
 
 import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.CarRental;
@@ -17,7 +17,7 @@ public class Program {
 
 	public static void main(String[] args) throws ParseException {
 
-		Locale.setDefault(Locale.US);
+		
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
@@ -31,7 +31,7 @@ public class Program {
 
 		CarRental car = new CarRental(start, finish, new Vehicle(carModel));
 
-		System.out.print("Enter price per hour: ");
+		System.out.print("Enter price per day: ");
 		double pd = sc.nextDouble();
 		System.out.print("Enter price per hour: ");
 		double ph = sc.nextDouble();
